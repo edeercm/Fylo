@@ -28,7 +28,7 @@ const Logo = styled.img`
   }
 `
 
-const Location = styled.img`
+const LocationIcon = styled.img`
   width: auto;
   height: 100%;
 
@@ -41,6 +41,28 @@ const Location = styled.img`
 
 const Label = styled.span`
   color: white;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`
+
+const PhoneIcon = styled.img`
+  width: auto;
+  height: 100%;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`
+
+const EmailIcon = styled.img`
+  width: auto;
+  height: 100%;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
@@ -63,21 +85,21 @@ const Footer = () => {
             <div className="row">
               <div className="col-6">
                 <div className="row">
-                  <div className="col-6">
+                  <div className="col-7">
                     <div className='d-flex flex-row'>
-                      <Location src={location} alt="location-icon" />
+                      <LocationIcon src={location} alt="location-icon" />
                       <Label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua</Label>
                     </div>
                   </div>
-                  <div className="col-6">
-                    <ul>
-                      <li className='d-flex flex-row text-white gap-3'>
-                        <img src={phone} className='w-auto' alt="" />
+                  <div className="col-5">
+                    <ul className='d-flex flex-column gap-3'>
+                      <li className='d-flex flex-row text-white align-items-center gap-3'>
+                        <PhoneIcon src={phone} alt="" />
                         <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
                       </li>
-                      <l1 className='d-flex flex-row text-white gap-3'>
-                        <img src={email} className='w-auto' alt="" />
+                      <l1 className='d-flex flex-row text-white align-items-center gap-3'>
+                        <EmailIcon src={email} className='w-auto' alt="" />
                         <a href="mailto:example@fylo.com">example@fylo.com</a>
                       </l1>
                     </ul>
