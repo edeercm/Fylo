@@ -87,7 +87,7 @@ const SecOne = () => {
     <Section>
       <CuvryBackground>
         <source media="(min-width: 768px)" srcSet={bgcurvydesk} />
-        <img src={bgcurvymobile} alt="curvy-mobile-bg" />
+        <img src={bgcurvymobile} alt="curvy-mobile-bg"/>
       </CuvryBackground>
       <div className='container'>
         <div className="row">
