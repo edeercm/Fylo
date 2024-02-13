@@ -6,13 +6,6 @@ import email from '../../assets/images/icon-email.svg'
 const Icon = styled.img`
   width: auto;
   height: 2.5vh;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  
-  }
-
-  @media (max-width: 575.97px) {
-  }
 `
 
 const ContactInfo = () => {
