@@ -12,6 +12,7 @@ const Info = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    flex-direction: column-reverse;
   }
 `
 

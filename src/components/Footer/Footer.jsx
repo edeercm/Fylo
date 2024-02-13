@@ -20,6 +20,8 @@ const Foooter = styled.footer`
   }
 
   @media (max-width: 575.97px) {
+    height: auto;
+    padding: 10rem 0 1.5rem;
   }
 `
 
@@ -36,6 +38,8 @@ const Container = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    height: auto;
+    gap: 3rem;
   }
 `
 
@@ -68,18 +72,18 @@ const Footer = () => {
         <article>
           <Logo src={logo} alt="logo" />
         </article>
-        <div className="row gap-md-4 gap-xl-0">
-          <div className="col-md-12 col-xl-3">
+        <div className="row gap-4 gap-xl-0">
+          <div className="col-12 col-xl-3">
             <div className='d-flex flex-row align-items-start gap-2'>
               <Icon src={location} alt="location-icon" />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua</p>
             </div>
           </div>
-          <div className="col-md-12 col-xl-3">
+          <div className="col-12 col-xl-3">
             <ContactInfo />
           </div>
-          <div className="col-md-12 col-xl-2">
+          <div className="col-12 col-xl-2">
             <a href="#">
               <ul className='d-flex flex-column text-white gap-2'>
                 <li>About Us</li>
@@ -89,7 +93,7 @@ const Footer = () => {
               </ul>
             </a>
           </div>
-          <div className="col-md-12 col-xl-2">
+          <div className="col-12 col-xl-2">
             <a href="#">
               <ul className='d-flex flex-column text-white gap-2'>
                 <l1>Contact Us</l1>
@@ -98,7 +102,7 @@ const Footer = () => {
               </ul>
             </a>
           </div>
-          <div className="col-md-12 col-xl-2">
+          <div className="col-12 col-xl-2">
             <SocialMediaIcons />
           </div>
         </div>
