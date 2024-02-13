@@ -8,7 +8,7 @@
   --open-sans: "Open Sans", sans-serif;
 
   /* COLORS */
-  --main-color:hsl(217, 28%, 15%);
+  --main-color: hsl(217, 28%, 15%);
   --second-color: hsl(218, 28%, 13%);
   --alternative-color: hsl(219, 30%, 18%);
   --text-color: white;
@@ -20,6 +20,17 @@ body {
   background-color: var(--main-color)
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--raleway);
+}
+
+ul {
+  @media (max-width: 991.98px) {
+    padding: 0;
+  }
 }

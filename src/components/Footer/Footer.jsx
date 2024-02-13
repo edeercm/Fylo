@@ -15,6 +15,8 @@ const Foooter = styled.footer`
   background-color: hsl(216, 53%, 9%);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: auto;
+    padding: 12.5rem 0 3.5rem;
   }
 
   @media (max-width: 575.97px) {
@@ -29,6 +31,8 @@ const Container = styled.div`
   justify-content: space-between;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: auto;
+    gap: 3rem;
   }
 
   @media (max-width: 575.97px) {
@@ -48,19 +52,9 @@ const Logo = styled.img`
 const Icon = styled.img`
   width: 5%;
   height: auto;
-  color: white;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
-  @media (max-width: 575.97px) {
-  }
-`
-
-const Label = styled.p`
-  color: white;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 3.75%;
   }
 
   @media (max-width: 575.97px) {
@@ -74,18 +68,18 @@ const Footer = () => {
         <article>
           <Logo src={logo} alt="logo" />
         </article>
-        <div className="row">
-          <div className="col-3">
-            <p className='d-flex flex-row align-items-start gap-2'>
+        <div className="row gap-md-4 gap-xl-0">
+          <div className="col-md-12 col-xl-3">
+            <div className='d-flex flex-row align-items-start gap-2'>
               <Icon src={location} alt="location-icon" />
-              <Label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua</Label>
-            </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua</p>
+            </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-12 col-xl-3">
             <ContactInfo />
           </div>
-          <div className="col-2">
+          <div className="col-md-12 col-xl-2">
             <a href="#">
               <ul className='d-flex flex-column text-white gap-2'>
                 <li>About Us</li>
@@ -95,7 +89,7 @@ const Footer = () => {
               </ul>
             </a>
           </div>
-          <div className="col-2">
+          <div className="col-md-12 col-xl-2">
             <a href="#">
               <ul className='d-flex flex-column text-white gap-2'>
                 <l1>Contact Us</l1>
@@ -104,11 +98,13 @@ const Footer = () => {
               </ul>
             </a>
           </div>
-          <div className="col-2">
+          <div className="col-md-12 col-xl-2">
             <SocialMediaIcons />
           </div>
         </div>
-        <FooterLabel />
+        <div className='col-12'>
+          <FooterLabel />
+        </div>
       </Container>
     </Foooter >
   </>

@@ -4,18 +4,19 @@ import productive from '../assets/images/illustration-stay-productive.png'
 import arrow from '../assets/images/icon-arrow.svg'
 
 const Section = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 75vh;
-  padding: 0 0 5rem;
   background-color: var(--second-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: auto;
+    padding-bottom: 5rem;
+
   }
 
   @media (max-width: 575.97px) {
+    height: auto;
+    padding-bottom: 5rem;
   }
 `
 
@@ -25,9 +26,11 @@ const Label = styled.h1`
   font-size: 2.5rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 100%;
   }
 
   @media (max-width: 575.97px) {
+    width: 100%;
   }
 `
 
@@ -35,9 +38,11 @@ const Description = styled.p`
   width: 85%;
  
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 100%;
   }
 
   @media (max-width: 575.97px) {
+    width: 100%;
   }
 `
 
@@ -56,6 +61,10 @@ const Button = styled.a`
     left: 0;
     bottom: -0.25rem;
     background-color: var(--text-color);
+
+    @media (max-width: 575.97px) {
+      width: 50%; 
+    }
   }
  
   @media (min-width: 575.98px) and (max-width: 991.98px) {
@@ -72,22 +81,22 @@ const Icon = styled.img`
   }
 
   @media (max-width: 575.97px) {
+    width: 5%;
   }
 `
-
 
 const SecThree = () => {
   return <>
     <Section>
       <div className="container">
-        <div className="row">
-          <div className="col-6">
+        <div className="row gap-5 gap-xl-0">
+          <div className="col-12 col-xl-6 d-flex justify-content-center">
             <article>
               <img src={productive} alt="" />
             </article>
           </div>
-          <div className="col-6 d-flex align-items-center">
-            <div className='d-flex flex-column ms-4 gap-1'>
+          <div className="col-12 col-xl-6 d-flex align-items-center">
+            <div className='d-flex flex-column ms-0 ms-xl-4 gap-2'>
               <Label>Stay productive, wherever you are</Label>
               <Description>Never let location be an issue when accessing your files. Fylo has you covered for all of your file
                 storage needs.</Description>

@@ -7,6 +7,7 @@ const Card = styled.div`
   width: 65%;
   height: 32.5vh;
   padding: 0 4rem;
+  gap: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,21 +16,27 @@ const Card = styled.div`
   background-color: var(--alternative-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 90%;
+    height: 35vh;
+    gap: 1rem;
   }
 
   @media (max-width: 575.97px) {
+    width: 100%;
+    height: auto;
+    padding: 3rem 1rem;
   }
 `
 
 const Label = styled.h2`
   font-weight: bold;
   font-size: 2rem;
-  color: var(--text-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
 
   @media (max-width: 575.97px) {
+    font-size: 1.25rem;
   }
 `
 
@@ -43,6 +50,7 @@ const Button = styled.button`
   }
 
   @media (max-width: 575.97px) {
+   
   }
 `
 
@@ -53,7 +61,7 @@ const EarlyAcces = () => {
         <Label>Get early access today</Label>
         <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
           questions, our support team would be happy to help you.</p>
-        <form action="" className='d-flex'>
+        <form action="" className='d-flex flex-column flex-xl-row'>
           <input
             type="email"
             name='email'

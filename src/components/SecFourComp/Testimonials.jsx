@@ -13,6 +13,9 @@ const Card = styled.div`
   background-color: hsl(219, 30%, 18%);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 62.5%;
+    height: 25vh;
+    justify-content: center;
   }
 
   @media (max-width: 575.97px) {
@@ -24,6 +27,7 @@ const Description = styled.p`
   font-size: 0.875rem;
   
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 1rem;
   }
 
   @media (max-width: 575.97px) {
@@ -39,6 +43,7 @@ const Img = styled.img`
   object-position: center center;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 15%;
   }
 
   @media (max-width: 575.97px) {
@@ -51,6 +56,7 @@ const Name = styled.span`
   font-size: 0.75rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 0.875rem;
   }
 
   @media (max-width: 575.97px) {
@@ -62,6 +68,7 @@ const Position  = styled.span`
   font-size: 0.75rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 0.875rem;
   }
 
   @media (max-width: 575.97px) {
@@ -70,8 +77,8 @@ const Position  = styled.span`
 
 const Testimonials = () => {
   return <>
-    <div className="row">
-      <div className="col-4 d-flex justify-content-center">
+    <div className="row gap-5 gap-xl-0">
+      <div className="col-12 col-xl-4 d-flex justify-content-center">
         <Card>
           <Description>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
             become a well-oiled collaboration machine.</Description>
@@ -84,7 +91,7 @@ const Testimonials = () => {
           </div>
         </Card>
       </div>
-      <div className="col-4 d-flex justify-content-center">
+      <div className="col-12 col-xl-4 d-flex justify-content-center">
         <Card>
           <Description>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
             become a well-oiled collaboration machine.</Description>
@@ -97,7 +104,7 @@ const Testimonials = () => {
           </div>
         </Card>
       </div>
-      <div className="col-4 d-flex justify-content-center">
+      <div className="col-12 col-xl-4 d-flex justify-content-center">
         <Card>
           <Description>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
             become a well-oiled collaboration machine.</Description>

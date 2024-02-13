@@ -35,9 +35,11 @@ const Img = styled.img`
   width: 15%;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 20%;
   }
 
   @media (max-width: 575.97px) {
+    width: 30%;
   }
 `
 
@@ -56,9 +58,11 @@ const Description = styled.p`
   width: 65%;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 50%;
   }
 
   @media (max-width: 575.97px) {
+    width: 75%;
   }
 `
 
@@ -66,8 +70,8 @@ const Cards = () => {
   return <>
     <div className="row d-flex align-items-center gap-5">
       <div className="col-12">
-        <div className="row">
-          <div className="col-6">
+        <div className="row gap-5 gap-xl-0">
+          <div className="col-md-12 col-xl-6">
             <Card>
               <ImageContainer>
                 <Img src={access} alt="access-icon" />
@@ -77,7 +81,7 @@ const Cards = () => {
                 files follow you everywhere.</Description>
             </Card>
           </div>
-          <div className="col-6">
+          <div className="col-md-12 col-xl-6">
             <Card>
               <ImageContainer>
                 <Img src={security} alt="security-icon" />
@@ -90,8 +94,8 @@ const Cards = () => {
         </div>
       </div>
       <div className="col-12">
-        <div className="row">
-          <div className="col-6">
+        <div className="row gap-5 gap-xl-0">
+          <div className="col-12 col-xl-6">
             <Card>
               <ImageContainer>
                 <Img src={collaboration} alt="collaboration-icon" />
@@ -101,7 +105,7 @@ const Cards = () => {
                 No email attachments required.</Description>
             </Card>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-xl-6">
             <Card>
               <ImageContainer>
                 <Img src={anyfile} alt="anyfile-icon" />

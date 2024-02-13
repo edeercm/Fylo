@@ -23,9 +23,13 @@ const Quotes = styled.img`
   margin-bottom: -0.75rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    position: relative;
+    left: 17.5%;
   }
 
   @media (max-width: 575.97px) {
+    width: 7.5%;
+    margin: 0 0.25rem -0.25rem;
   }
 `
 

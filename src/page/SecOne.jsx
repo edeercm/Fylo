@@ -4,7 +4,6 @@ import intro from '../assets/images/illustration-intro.png'
 import bgcurvydesk from '../assets/images/bg-curvy-desktop.svg'
 import bgcurvymobile from '../assets/images/bg-curvy-mobile.svg'
 
-
 const Section = styled.section`
   position: relative;
   display: flex;
@@ -14,9 +13,11 @@ const Section = styled.section`
   height: 100vh;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: auto;
   }
 
   @media (max-width: 575.97px) {
+    height: auto;
   }
 `
 
@@ -25,21 +26,17 @@ const CuvryBackground = styled.picture`
   width: 100%;
   bottom: 0;
   z-index: -1;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
-  @media (max-width: 575.97px) {
-  }
 `
 
 const IntroIllustration = styled.img`
   width: 50%;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 75%;
   }
 
   @media (max-width: 575.97px) {
+    width: 100%;
   }
 `
 
@@ -49,9 +46,11 @@ const Label = styled.h1`
   font-size: 2.25rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 70%;
   }
 
   @media (max-width: 575.97px) {
+    width: 100%;
   }
 `
 
@@ -60,9 +59,11 @@ const Description = styled.p`
   font-size: 1.125rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 50%;
   }
 
   @media (max-width: 575.97px) {
+    width: 85%;
   }
 `
 
