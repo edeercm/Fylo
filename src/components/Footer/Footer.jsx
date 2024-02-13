@@ -21,7 +21,7 @@ const Foooter = styled.footer`
 
   @media (max-width: 575.97px) {
     height: auto;
-    padding: 10rem 0 1.5rem;
+    padding: 10rem 0 4.5rem;
   }
 `
 
