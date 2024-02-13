@@ -8,7 +8,7 @@ import FooterLabel from './FooterLabel'
 
 const Foooter = styled.footer`
   width: 100%;
-  height: 75vh;
+  height: 72.5vh;
   display: flex;
   align-items: end;
   padding: 0 0 3.5rem;
