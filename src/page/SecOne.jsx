@@ -93,7 +93,7 @@ const SecOne = () => {
         <div className="row">
           <div className="col-12 d-flex flex-column align-items-center">
             <IntroIllustration src={intro} alt="intro-illustration" />
-            <div className='d-flex flex-column text-center align-items-center mt-5 gap-4'>
+            <div className='d-flex flex-column text-center align-items-center mt-5 gap-2 gap-md-4 gap-xl-4'>
               <Label >All your files in one secure location, accessible anywhere.</Label>
               <Description>Fylo stores all your most important files in one secure location. Access them wherever you need, share and   collaborate with friends family, and co-workers.</Description>
               <Button>Get Started</Button>

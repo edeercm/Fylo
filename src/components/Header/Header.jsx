@@ -28,7 +28,7 @@ const Header = () => {
     <header>
       <div className="container d-flex align-items-center justify-content-between py-5">
         <div>
-          <a href="/">
+          <a href="#">
             <Img src={Logo} alt="logo-icon" />
           </a>
         </div>
