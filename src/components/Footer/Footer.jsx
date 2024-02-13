@@ -72,7 +72,7 @@ const Footer = () => {
         <article>
           <Logo src={logo} alt="logo" />
         </article>
-        <div className="row gap-3 gap-xl-0">
+        <div className="row gap-4 gap-xl-0">
           <div className="col-12 col-xl-3">
             <div className='d-flex flex-row align-items-start gap-2'>
               <Icon src={location} alt="location-icon" />

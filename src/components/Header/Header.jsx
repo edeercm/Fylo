@@ -3,8 +3,24 @@ import styled from 'styled-components'
 import Logo from '../../assets/images/logo.svg'
 
 const Label = styled.li`
-  color: white;
-  font-family: var(--open-sans);
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0; /* Ajuste para que la línea comience desde el lado derecho */
+    width: 0;
+    height: 0.175rem;
+    background-color: var(--text-color);
+    transition: width 0.35s ease-out, right 0.35s ease-in; /* Agregamos right a la transición */
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
