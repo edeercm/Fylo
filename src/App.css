@@ -31,5 +31,6 @@ h6 {
 ul {
   @media (max-width: 991.98px) {
     padding: 0;
+    margin: 0;
   }
 }

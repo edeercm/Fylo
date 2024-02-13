@@ -25,15 +25,15 @@ const Img = styled.img`
 
 const Header = () => {
   return <>
-    <header className='d-flex align-items-center justify-content-center p-5'>
-      <div className="container d-flex align-items-center justify-content-between">
+    <header>
+      <div className="container d-flex align-items-center justify-content-between py-5">
         <div>
           <a href="/">
             <Img src={Logo} alt="logo-icon" />
           </a>
         </div>
         <nav>
-          <ul className='d-flex flex-row gap-5'>
+          <ul className='d-flex flex-row gap-4 gap-md-5 gap-xl-5'>
             <Label>Features</Label>
             <Label>Team</Label>
             <Label>Sign In</Label>
