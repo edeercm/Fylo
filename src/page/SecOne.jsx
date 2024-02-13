@@ -50,7 +50,8 @@ const Label = styled.h1`
   }
 
   @media (max-width: 575.97px) {
-    width: 100%;
+    width: 80%;
+    font-size: 1.5rem;
   }
 `
 
@@ -64,6 +65,7 @@ const Description = styled.p`
 
   @media (max-width: 575.97px) {
     width: 85%;
+    font-size: 1rem;
   }
 `
 
