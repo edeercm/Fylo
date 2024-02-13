@@ -10,6 +10,7 @@ const Section = styled.section`
   width: 100%;
   height: 75vh;
   padding: 0 0 5rem;
+  background-color: var(--second-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
@@ -20,9 +21,8 @@ const Section = styled.section`
 
 const Label = styled.h1`
   width: 55%;
-  color: white;
-  font-size: 2.5rem;
   font-weight: bold;
+  font-size: 2.5rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
@@ -33,7 +33,6 @@ const Label = styled.h1`
 
 const Description = styled.p`
   width: 85%;
-  color: white;
  
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
@@ -48,7 +47,6 @@ const Button = styled.a`
   flex-direction: row;
   align-items: center;
   gap: 0.25rem;
-  color: white;
 
   &::after {
     content: '';
@@ -57,7 +55,7 @@ const Button = styled.a`
     height: 2px;
     left: 0;
     bottom: -0.25rem;
-    background-color: white;
+    background-color: var(--text-color);
   }
  
   @media (min-width: 575.98px) and (max-width: 991.98px) {

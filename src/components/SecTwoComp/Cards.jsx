@@ -42,7 +42,6 @@ const Img = styled.img`
 `
 
 const Label = styled.h1`
-  color: white;
   font-weight: bold;
   font-size: 1.125rem;
  
@@ -55,8 +54,7 @@ const Label = styled.h1`
 
 const Description = styled.p`
   width: 65%;
-  color: white;
- 
+
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
 

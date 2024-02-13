@@ -12,7 +12,7 @@ const Card = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: hsl(219, 30%, 18%);
+  background-color: var(--alternative-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
@@ -22,19 +22,9 @@ const Card = styled.div`
 `
 
 const Label = styled.h2`
-  color: white;
   font-weight: bold;
   font-size: 2rem;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
-  @media (max-width: 575.97px) {
-  }
-`
-
-const Info = styled.p`
-  color: white;
+  color: var(--text-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
@@ -44,10 +34,7 @@ const Info = styled.p`
 `
 
 const Button = styled.button`
-  /* display: block;
-  margin: 0 auto; */
   padding: 0.725rem 4rem;
-  color: white;
   font-weight: bold;
   border-radius: 2.5rem;
   background: linear-gradient(to right, #65e2d9, #339ecc);
@@ -61,11 +48,11 @@ const Button = styled.button`
 
 const EarlyAcces = () => {
   return <>
-    <div className='position-relative d-flex align-items-center justify-content-center'>
+    <div className='d-flex align-items-center justify-content-center'>
       <Card>
         <Label>Get early access today</Label>
-        <Info>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-          questions, our support team would be happy to help you.</Info>
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+          questions, our support team would be happy to help you.</p>
         <form action="" className='d-flex'>
           <input
             type="email"

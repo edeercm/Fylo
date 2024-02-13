@@ -20,7 +20,6 @@ const Card = styled.div`
 `
 
 const Description = styled.p`
-  color: white;
   opacity: 0.8;
   font-size: 0.875rem;
   
@@ -47,7 +46,6 @@ const Img = styled.img`
 `
 
 const Name = styled.span`
-  color: white;
   opacity: 0.8;
   font-weight: bold;
   font-size: 0.75rem;
@@ -60,7 +58,6 @@ const Name = styled.span`
 `
 
 const Position  = styled.span`
-  color: white;
   opacity: 0.8;
   font-size: 0.75rem;
 

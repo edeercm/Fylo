@@ -8,6 +8,7 @@ const Section = styled.section`
   justify-content: center;
   width: 100%;
   height: 100vh;
+  background-color: var(--second-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }

@@ -2,13 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
+
+  /* FONTS */
   --raleway: "Raleway", sans-serif;
   --open-sans: "Open Sans", sans-serif;
+
+  /* COLORS */
+  --main-color:hsl(217, 28%, 15%);
+  --second-color: hsl(218, 28%, 13%);
+  --alternative-color: hsl(219, 30%, 18%);
+  --text-color: white;
 }
 
 body {
   font-family: var(--open-sans);
-  background-color: hsl(217, 28%, 15%);
+  color: var(--text-color);
+  background-color: var(--main-color)
 }
 
 h1, h2, h3, h4, h5, h6 {
