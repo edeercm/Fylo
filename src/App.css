@@ -34,3 +34,15 @@ ul {
     margin: 0;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background: #275a69;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  background: white;
+}
+
+
