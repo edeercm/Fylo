@@ -36,13 +36,13 @@ ul {
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
-  background: #275a69;
+  width: 0.6rem;
+  background: #34555f;
 }
 
 body::-webkit-scrollbar-thumb {
-  border-radius: 0.25rem;
   background: white;
+  border-radius: 0.25rem;
 }
 
 
